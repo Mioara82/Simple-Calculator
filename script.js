@@ -15,13 +15,13 @@ operators.forEach(operator => {
         let result;
 
         switch (e.target) {
-            case plusButton: {result = parseInt(input1.value) + parseInt(input2.value); break;}
-            case minusButton: {result = input1.value - input2.value; break;}
-            case multiplyButton: {result = input1.value * input2.value; break;}
-            case divideButton: {result = input1.value / input2.value; break;}
-        }
+            case plusButton: result = parseInt(input1.value) + parseInt(input2.value); break;
+            case minusButton:result = input1.value - input2.value; break;
+            case multiplyButton: result = input1.value * input2.value; break;
+            case divideButton: result = input1.value / input2.value; break;
+        
     
-        if (!isNaN(result) && result % 1 !== 0)
+        if (!isNaN(result) && !Number.isInteger(result))
             result = result.toFixed(3);
 
         if (input1.value == '' || input2.value == '') result = 'Enter values first';

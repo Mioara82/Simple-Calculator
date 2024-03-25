@@ -10,8 +10,16 @@
     <div class="calculator calc-element">
       <h1 class="calc-header">Simple Calculator</h1>
 
-      <input type="text" class="calc-input-1 calc-input calc-element" id="input1"/>
-      <input type="text" class="calc-input-2 calc-input calc-element" id="input2"/>
+      <div class="calc-input-1 calc-input">
+        <label for="input1" class="warning hidden">Enter a number</label>
+      <input type="text" class="calc-input-area calc-element" id="input1"/>
+      </div>
+      <div class="calc-input-2 calc-input">
+        <label for="input2" class="warning hidden">Enter a number</label>
+      <input type="text" class="calc-input-area calc-element" id="input2"/>
+      </div>
+      
+      
 
       <button class="calc-plus calc-button calc-element" id="plusButton">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">

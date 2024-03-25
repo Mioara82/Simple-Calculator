@@ -1,0 +1,86 @@
+* {
+  padding: 0;
+  margin: 0;
+
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.calc-element {
+  padding: 1rem;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  font-size: 24px;
+  background-color: rgb(69, 63, 100);
+  color: rgb(205, 208, 240);
+}
+
+.calculator {
+  display: grid;
+  grid-template-areas:
+    "head head head head"
+    "input1 input1 input2 input2"
+    "plus minus multiply divide"
+    "result result result result";
+  width: 500px;
+  margin: 3rem auto;
+  gap: 1rem;
+  padding: 3rem;
+  font-size: 24px;
+  border-radius: 5px;
+  place-items: center;
+  background-color: rgb(111, 99, 152);
+}
+.calc-header {
+  grid-area: head;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.calc-input {
+  place-self: center;
+  font-size: 30px;
+  font-weight: 600;
+  width: 50%;
+  box-sizing: border-box;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.calc-input-1 {
+  grid-area: input1;
+  margin-left: auto;
+}
+.calc-input-2 {
+  grid-area: input2;
+  margin-right: auto;
+}
+.calc-button {
+  cursor: pointer;
+  width: 70%;
+  margin-bottom: 2rem;
+}
+.calc-button:hover {
+  border: 2px solid rgb(214, 206, 240);
+}
+.calc-button:active {
+  border: 2px solid rgba(214, 206, 240, 0.7);
+}
+.calc-plus {
+  grid-area: plus;
+  margin-left: auto;
+}
+.calc-minus {
+  grid-area: minus;
+}
+.calc-multiply {
+  grid-area: multiply;
+}
+.calc-divide {
+  grid-area: divide;
+  margin-right: auto;
+}
+.calc-result {
+  place-self: start;
+  width: 100%;
+  min-height: 5rem;
+  box-sizing: border-box;
+  grid-area: result;
+}

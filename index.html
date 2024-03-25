@@ -10,14 +10,20 @@
     <div class="calculator calc-element">
       <h1 class="calc-header">Simple Calculator</h1>
 
-      <input type="text" class="calc-input-1 calc-input calc-element" />
-      <input type="text" class="calc-input-2 calc-input calc-element" />
-      <button class="calc-plus calc-button calc-element">+</button>
-      <button class="calc-minus calc-button calc-element">-</button>
-      <button class="calc-multiply calc-button calc-element">*</button>
-      <button class="calc-divide calc-button calc-element">/</button>
+      <input type="text" class="calc-input-1 calc-input calc-element" id="input1"/>
+      <input type="text" class="calc-input-2 calc-input calc-element" id="input2"/>
 
-      <h2 class="calc-result calc-element"></h2>
+      <button class="calc-plus calc-button calc-element" id="plusButton">
+        +</button>
+      <button class="calc-minus calc-button calc-element" id="minusButton">
+        -</button>
+      <button class="calc-multiply calc-button calc-element" id="multiplyButton">
+        *</button>
+      <button class="calc-divide calc-button calc-element" id="divideButton">
+        /</button>
+
+      <h2 class="calc-result calc-element" id="resultField"></h2>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>

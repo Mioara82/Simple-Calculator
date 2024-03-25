@@ -30,6 +30,7 @@ operators.forEach(operator => {
     })
 })
 
+
 input1.addEventListener('input', checkInput);
 input2.addEventListener('input', checkInput);
 
